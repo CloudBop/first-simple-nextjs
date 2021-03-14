@@ -23,6 +23,7 @@ const Comment = ({ email, body }) => (
 // https://stackoverflow.com/questions/63227604/how-to-get-param-from-url-in-getstaticprops-without-using-getstaticpaths
 // https://nextjs.org/docs/basic-features/data-fetching#getstaticpaths-static-generation
 export async function getServerSideProps({ query }) {
+  console.log(`query`, query)
   const { id } = query;
   const res = await axios.get(
     `http://jsonplaceholder.typicode.com/comments?postId=${id}`

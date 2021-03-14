@@ -8,14 +8,17 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "dev:server1":"node server1.js",
-    "start:server1":"NODE_ENV=production node server1.js"
+    "dev:server": "node custom-server.js",
+    "start:server": "NODE_ENV=production node custom-server.js",
+    "dev:express": "node express-server.js",
+    "start:express": "NODE_ENV=production node express-server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.21.1",
+    "express": "^4.17.1",
     "next": "^10.0.8",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
