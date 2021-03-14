@@ -11,6 +11,10 @@ function MyApp({ Component, pageProps }) {
     </>
 )
 }
+
+/**
+ * todo - _document
+ */
  
 // Only uncomment this method if you have blocking data requirements for
 // every single page in your application. This disables the ability to
