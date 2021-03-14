@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div style={styles}>
-      <Link href="/home">
+      <Link href="/">
         {/*  */}
         <a>Home</a>
       </Link>
