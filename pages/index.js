@@ -7,7 +7,11 @@ const Index = ({posts}) => {
     <div>
       <ul>
         {posts.map(post=>(
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}>
+            <Link href={`/post?id=${post.id}`} as={`/p/post?id=${post.id}`}>
+              <a>{post.title}</a>
+            </Link>
+          </li>
         ))}
       </ul>
     </div>
